@@ -18,7 +18,7 @@ describe('angularjs page', function() {
      });
      browser.ignoreSynchronization = false;
    });
-  it('should open QuickStart page from box GetGoingWithAngular', async function() {
+  xit('should open QuickStart page from box GetGoingWithAngular', async function() {
     await pageObject.box2.click();
     var name = element(by.css('#quickstart'));
     await browser.wait(name.isDisplayed(), 10000, 'quickstart element not found');
